@@ -1,0 +1,624 @@
+:root {
+     --soft--red: hsl(7, 99%, 70%);
+     --yellow: hsl(51, 100%, 49%);
+     --dark-desaturated-cyan: hsl(167, 40%, 24%);
+     --dark-blue: hsl(198, 62%, 26%);
+     --dark-moderate--cyan: hsl(168, 34%, 41%);
+
+
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    Font-size: 18px;
+    font-family: 'Fraunces', serif;
+}
+
+header {
+    position: relative;
+}
+
+
+/* img settings */
+.img__mobile-header {
+    width: 100%;
+}
+
+.img__mobile-header img {
+    width: 100%;
+    display: block;
+}
+
+.img__desktop-header {
+    display: none;
+}
+
+
+/* navbar settings and styles */
+.navbar {
+    width: 90%;
+    margin: 0 3%;
+    position: absolute;
+    top: 2%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h3 {
+    color: var(--white);
+    font-weight: 900;
+}
+
+.hamburguer__container {
+    align-self: flex-end;
+}
+
+/* header text */
+.header__text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 30%;
+    /* left: 0; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.header__text h1 {
+    font-size: 2.4em;
+    color: var(--white);
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.arrow__container {
+    width: 100%;
+}
+
+/* main and images display */
+.main {
+    display: grid;
+    grid-template-areas: 
+    "egg__image"
+    "transform__yourbrand"
+    "coqtel"
+    "stand__out"
+    "strawberries"
+    "orange__image"
+    "testimonial"
+    "four__pictures";
+}
+
+.desktop__images {
+    display: none;
+}
+
+.basic__img-settings {
+    width: 100%;
+}
+
+.basic__img-settings img {
+    width: 100%;
+    display: block;
+}
+
+/* text center container */
+.text__center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* egg section */
+.img__egg-container {
+    grid-area: egg__image;
+}
+
+
+
+/* brand transform */
+.brand__transform{
+    grid-area: transform__yourbrand;
+}
+
+/* .brand__transform-text {
+} */
+
+.brand__transform-text h2 {
+    margin-top: 0.6em;
+    padding: 1em;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.brand__transform-text p {
+    font-family: 'Barlow', sans-serif;
+    color: var(--grayish-blue);
+    line-height: 1.4;
+}
+
+.line__decoration-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.line__decoration-container h4 {
+    font-size: 19px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.line__decoration-container::after {
+    content: '';
+    position: absolute;
+    width: 7.5em;
+    height: 0.3em;
+    background: var(--yellow);
+    bottom: 1.1em;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+/* coqtel part */
+.img__coqtel-container {
+    grid-area: coqtel;
+}
+
+/* stand out to the right audience */
+.right__audience {
+    grid-area: stand__out;
+}
+
+.stand__out-text h2{
+    margin-top: 0.6em;
+    padding: 1em;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.stand__out-text p{
+    font-family: 'Barlow', sans-serif;
+    color: var(--grayish-blue);
+    line-height: 1.4;
+}
+
+.stand__out-text h4 {
+    font-size: 19px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.line__decoration-container2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.line__decoration-container2::after {
+    content: '';
+    position: absolute;
+    width: 7.5em;
+    height: 0.3em;
+    background: var(--soft--red);
+    bottom: 2.1em;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+/* strawberreis area */
+
+.img__strawberries-container {
+    width: 100%;
+    height: 100%;
+}
+
+.img__strawberries-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.strawberries__items-container {
+    position: relative;
+    grid-area: strawberries;
+
+}
+
+.strawberries__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    position: absolute;
+    bottom: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.strawberries__content h2 {
+    font-size: 26px;
+    color: var(--dark-desaturated-cyan);
+}
+
+.strawberries__content p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--dark-desaturated-cyan);
+    font-family: 'Barlow', sans-serif;
+}
+
+/* orange area */
+
+.img__orange-container{
+    width: 100%;
+    height: 100%;
+}
+
+.img__orange-container img {
+    height: 100%;
+}
+
+.orange__items-container {
+    position: relative;
+    grid-area: orange__image;
+}
+
+.orange__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    position: absolute;
+    bottom: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.orange__content h2 {
+    font-size: 26px;
+    color: var(--dark-desaturated-cyan);
+}
+
+.orange__content p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--dark-desaturated-cyan);
+    font-family: 'Barlow', sans-serif;
+}
+
+/* client testimonial secation and styles*/
+.client__testimonials-section {
+    grid-area: testimonial;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.client__testimonials-section h2 {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    padding-top: 3em;
+    color: var(--grayish-blue);
+    
+}
+
+.client__testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.client__testimonials-container p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-family: 'Barlow', sans-serif;
+    color: var(--very-dark-grayish-blue);
+}
+
+.client__testimonials-container h3 {
+    font-size: 18px;
+    color: var(-dark-grayish-blue);
+}
+
+.client__testimonials-container h4 {
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    color: var( --grayish-blue);
+}
+
+.final__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+/* first container (emily) */
+.emily__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.emily__container img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+/* second container(Thomas) */
+.thomas__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.thomas__container img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+/* third container (Jennie) */
+.jennie__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.jennie__container img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+/* 4 pictures section */
+.four__pictures-section{
+    grid-area: four__pictures;
+    display: flex;
+    flex-direction: column;
+}
+
+.milk__and__orange-container {
+    display: flex;
+}
+
+.cone__and__sugar-container {
+    display: flex;
+}
+
+/* footer */
+footer {
+    background: var(--dark-moderate--cyan);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+footer h2 {
+    padding-top: 2em;
+    color: var(--dark-desaturated-cyan);
+    cursor: pointer;
+}
+
+footer h2:hover {
+    color: var(--white);
+}
+
+.footer__info ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2em;
+}
+
+.footer__info ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--dark-desaturated-cyan);
+}
+
+.footer__info ul li a:hover {
+    color: var(--white);
+}
+
+.socials__container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 4em;
+}
+
+@media screen and (min-width: 912px){
+    .img__mobile-header img {
+        display: none;
+    }
+    
+    .img__desktop-header {
+        display: block;
+    }
+
+    .img__desktop-header img {
+        width: 100%;
+        display: block;
+    }
+
+.main {
+    grid-template-areas: 
+    "transform__yourbrand transform__yourbrand egg__image egg__image"
+    "coqtel coqtel stand__out stand__out"
+    "strawberries strawberries orange__image orange__image"
+    "testimonial testimonial testimonial testimonial"
+    "four__pictures four__pictures four__pictures four__pictures";
+}
+
+.desktop__images {
+    display: block;
+}
+
+.mobile__images {
+    display: none;
+}
+
+
+/* brand transform */
+.brand__transform{
+    display: flex;
+    align-items: center;
+    grid-area: transform__yourbrand;
+}
+
+.brand__transform-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: start;
+    gap: 1em;
+} 
+
+.brand__transform-text h2 {
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 0em;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.line__decoration-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0em;
+    margin-bottom: 0em;
+}
+
+
+.line__decoration-container::after {
+    bottom: 0.1em;
+
+}
+
+/* stand out to the right audience */
+.right__audience {
+    display: flex;
+    align-items: center;
+    grid-area: stand__out;
+}
+
+.stand__out-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: start;
+    gap: 1em;
+}
+
+.stand__out-text h2{
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 0em;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.line__decoration-container2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0em;
+    margin-bottom: 0em;
+}
+
+.line__decoration-container2::after {
+    bottom: 0.1em;
+}
+
+/* client testimonial secation and styles*/
+.client__testimonials-section {
+    grid-area: testimonial;
+    text-align: center;
+    margin-bottom: 8em;
+    margin-top: 8em;
+}
+
+.client__testimonials-section h2 {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    padding-top: 0em;
+    margin-bottom: 2em;
+    color: var(--grayish-blue);
+    
+}
+
+.client__testimonials-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.emily__container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 1em;
+    margin-top: 0em;
+}
+
+.thomas__container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.jennie__container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+/* 4 pictures section */
+.four__pictures-section{
+    grid-area: four__pictures;
+    display: flex;
+    flex-direction: row;
+}
+
+/* sex */
+
+}
